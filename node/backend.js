@@ -5,8 +5,10 @@ var basededatos={
 };
 console.log("hola como estas?");
 
-var express = require("C:\\Program Files (x86)\\nodejs\\node_modules\\express");
-var parcero = require("C:\\Program Files (x86)\\nodejs\\node_modules\\body-parser");
+//var express = require("C:\\Program Files (x86)\\nodejs\\node_modules\\express");
+//var parcero = require("C:\\Program Files (x86)\\nodejs\\node_modules\\body-parser");
+var express = require("C:\\Program Files\\nodejs\\node_modules\\express");
+var parcero = require("C:\\Program Files\\nodejs\\node_modules\\body-parser");
 var web = express();
 web.use(parcero.urlencoded() );
 var server;
@@ -16,12 +18,12 @@ server =  web.listen(80,function()
 });
 web.get("/",function(request,response)
 {
-	response.sendfile("C:\\Users\\Mega\\Google Drive\\node\\formulario.html");
-})
-/*web.get("/",function(request,response)
+	response.sendfile("C:\\Users\\Mega\\Google Drive\\Repasos-de-programasion-basica\\node\\formulario.html");
+});
+web.get("/form.css",function(request,response)
 {
-	response.send("su conputadora a sido hackeada. "+papas);
-});*/
+	response.sendfile("C:\\Users\\Mega\\Google Drive\\Repasos-de-programasion-basica\\node\\form.css");
+});
 web.post("/entrar", function(request,response){
 
 	if(request.body.usuario == basededatos.usuario && request.body.clave == basededatos.password)
