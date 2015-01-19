@@ -1,0 +1,22 @@
+body
+{
+	background:#EEEEEE;
+	font-size:16px;
+	text-align:center;
+
+}
+h2
+{
+	color:#2EFEF7;
+	font-family:impact;
+}
+
+div
+{
+	text-align: center;
+	border-style: solid;
+    border-width: 5px;
+    width:18em;
+    height:;
+    display:inline-block;
+}
